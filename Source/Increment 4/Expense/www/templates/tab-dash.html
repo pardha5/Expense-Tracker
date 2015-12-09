@@ -1,0 +1,65 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding" ng-controller="DashController">
+    <div class="list card">
+      <div class="item item-divider">Expenses and Income</div>
+      <div class="item item-body">
+        
+          <div class="list">
+
+  <a class="item item-icon-left" href="./index.html#/tab/exview">
+    <i class="icon ion-card"></i>
+    Total Expenses
+      <b><span class="item-note" id="texp">
+      
+    </span></b>
+  </a>
+
+  <a class="item item-icon-left" href="./index.html#/tab/inview">
+    <i class="icon ion-cash"></i>
+    Total Income
+      <b><span class="item-note" id="tinc">
+      
+    </span></b>
+  </a>
+
+  <a class="item item-icon-left" href="#">
+    <i class="icon ion-social-usd"></i>
+    Balance
+    <b><span class="item-note" id="tbal">
+      
+    </span></b>
+  </a>
+
+  <a class="item item-icon-left" href="./index.html#/tab/addg">
+    <i class="icon ion-happy"></i>
+    Goals
+    <span class="badge badge-assertive" id="tgoal"></span>
+  </a>
+
+              <a class="item item-icon-left item-icon-right" href="./index.html#/tab/charts">
+    <i class="icon ion-pie-graph"></i>
+    Charts
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+              
+</div>
+      </div>
+    </div>
+    <!--<div class="list card">
+      <div class="item item-divider">Balance</div>
+      <div class="item item-body">
+        <div>
+          You ate an apple today!
+        </div>
+      </div>
+    </div>-->
+    <div class="list card">
+      <div class="item item-divider">Goal</div>
+      <div class="item item-body" ng-repeat="g in gl">
+        <div>
+            <b>${{g.amount}}</b> more to <b>{{g.name}}</b> by <b>{{g.date.substring(0,10)}}</b> months <b>{{g.time}}</b>.
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
