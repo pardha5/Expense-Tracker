@@ -1,0 +1,22 @@
+<ion-view view-title="Add Goal">
+ <ion-content ng-controller="GoalController">
+    <div></div>
+    <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Goal Name</span>
+    <input type="text" placeholder="ex.BuyCar" name="name" id="name" data-ng-model="goal.name">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Goal Amount</span>
+    <input type="text" placeholder="ex.10 $" name="amount" id="amount" data-ng-model="goal.amount">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Reach Date</span>
+    <input type="date" placeholder="mm/dd/yy" name="date" id="date" data-ng-model="goal.date">
+  </label>
+</div>
+    <div><center><button class="button button-positive" id="goal" name="goal" ng_click="Goaladd(goal)">
+  Add Goal
+</button></center></div>
+    </ion-content>
+     </ion-view>
