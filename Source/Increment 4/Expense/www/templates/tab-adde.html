@@ -1,0 +1,26 @@
+<ion-view view-title="Add Expense">
+ <ion-content ng-controller="ExpenseController">
+    <div></div>
+    <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Expense Name</span>
+    <input type="text" placeholder="ex.Food" name="name" id="name" data-ng-model="expense.name">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Amount</span>
+    <input type="text" placeholder="ex.10 $" name="amount" id="amount" data-ng-model="expense.amount">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Date</span>
+    <input type="date" placeholder="mm/dd/yy" name="date" id="date" data-ng-model="expense.date">
+  </label>
+</div>
+    <div><center><button class="button button-positive" id="expense" name="expense" ng_click="Exadd(expense)">
+  Add Expense
+</button><br><br>
+        <button class="button button-positive" id="back" name="back" ng_click="exviewback()">
+  Back
+</button>
+        </center></div>
+    </ion-content>
+     </ion-view>
